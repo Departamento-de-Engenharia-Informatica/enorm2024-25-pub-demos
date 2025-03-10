@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cr2:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cr2="http://pam.enorm.mei.isep.ipp.pt/cr2" xsi:schemaLocation="http://pam.enorm.mei.isep.ipp.pt/cr2 file:/Users/paulomaio/Work/Ensino/2024-25/MEI-ENORM/DemosRepo/eclipse/demo01/pt.ipp.isep.mei.enorm.pam.cr2/./model/cr2.ecore" name="Teste1">
+  <subject name="Product">
+    <feature id="price3"/>
+    <userfeedback xsi:type="cr2:Review" name="Review"/>
+  </subject>
+</cr2:Model>
