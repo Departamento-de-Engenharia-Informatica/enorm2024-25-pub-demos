@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cr2:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cr2="http://pam.enorm.mei.isep.ipp.pt/cr2" xsi:schemaLocation="http://pam.enorm.mei.isep.ipp.pt/cr2 ../model/cr2.ecore">
+  <subject name="Service">
+    <feature name="Outro"/>
+  </subject>
+</cr2:Model>

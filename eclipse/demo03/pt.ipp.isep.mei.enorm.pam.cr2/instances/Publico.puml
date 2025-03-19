@@ -1,0 +1,8 @@
+@startuml
+class Article << (S,#FF7700) >> {
++Title
+}
+class Comment << (F,green) >> {
+}
+Article *-> Comment
+@enduml

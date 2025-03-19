@@ -1,0 +1,19 @@
+-- @atlcompiler emftvm
+-- @path CR2=/pt.ipp.isep.mei.enorm.pam.cr2/model/cr2.ecore
+
+module featurename2uppercase;
+
+create OUT : CR2 refining IN : CR2;
+
+rule FeatureName2Uppercase {
+	from 
+		t1: CR2!Feature (t1.name.substring(1, 1).toUpper().compareTo(t1.name.substring(1, 1))<>0)
+	to
+		t2: CR2!Feature (
+			name <- t1.name.substring(1, 1).toUpper() + t1.name.substring(2, t1.name.size())	
+		)
+	do {
+		-- debug can be used to print to the console
+		('Applied FeatureName2UpperCase for Feature '+ t1.name).debug();
+	}
+}
