@@ -1,0 +1,37 @@
+rule cr2model2PlantUml 
+	transform m : cr2::Model {
+
+	template : "cr2model2plantuml.egl"
+
+	parameters : Map{
+		"path" = Sequence{"Structure", m.name},
+		"icon" = "diagram-ffffff",
+		"format" = "plantuml",
+			
+		"subject" = m.subject
+	}
+	
+}
+
+rule ModerationProcess2PlantUml 
+	transform p : cr2::ModerationProcess {
+
+	template : "moderationProcess2plantuml.egl"
+
+	parameters : Map{
+		"path" = Sequence{"Moderation Process", p.name},
+		"icon" = "diagram-c0c0c0",
+		"format" = "graphviz-dot",
+		
+		"layers" = Sequence {
+			Map {"id"="approve", "title"="ApproveFlow", "active"=true},
+			Map {"id"="reject", "title"="RejectFlow", "active"=true}
+		},
+		
+		
+		"process" = p
+	}
+	
+}
+
+

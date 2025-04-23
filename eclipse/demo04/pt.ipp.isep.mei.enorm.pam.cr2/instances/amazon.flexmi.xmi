@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cr2:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cr2="http://pam.enorm.mei.isep.ipp.pt/cr2" xmi:id="_NcatECAvEfCVApDNkUx-4Q" name="Amazon">
+  <subject xmi:id="_NcatESAvEfCVApDNkUx-4Q" name="Product">
+    <feature xmi:id="_NcatEiAvEfCVApDNkUx-4Q" name="Date"/>
+    <feature xmi:id="_NcatEyAvEfCVApDNkUx-4Q" name="Price"/>
+    <feature xmi:id="_NcatFCAvEfCVApDNkUx-4Q" name="Description"/>
+    <userFeedback xsi:type="cr2:Review" xmi:id="_NcatFSAvEfCVApDNkUx-4Q" name="Review"/>
+  </subject>
+</cr2:Model>

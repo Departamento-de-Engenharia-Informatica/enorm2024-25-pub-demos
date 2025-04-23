@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cr2:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cr2="http://pam.enorm.mei.isep.ipp.pt/cr2" xmi:id="_SZMJECAvEfCVApDNkUx-4Q" name="publico">
+  <subject xmi:id="_SZMJESAvEfCVApDNkUx-4Q" name="Article">
+    <feature xmi:id="_SZMJEiAvEfCVApDNkUx-4Q" name="Date"/>
+    <feature xmi:id="_SZMJEyAvEfCVApDNkUx-4Q" name="Title"/>
+    <feature xmi:id="_SZMJFCAvEfCVApDNkUx-4Q" name="Author"/>
+    <feature xmi:id="_SZMJFSAvEfCVApDNkUx-4Q" name="Contentsa"/>
+    <userFeedback xsi:type="cr2:Comment" xmi:id="_SZMJFiAvEfCVApDNkUx-4Q" name="Comment">
+      <moderationProcess xmi:id="_SZMJFyAvEfCVApDNkUx-4Q" name="VerifyComment" initialStep="_SZMJGCAvEfCVApDNkUx-4Q">
+        <step xsi:type="cr2:Automatic" xmi:id="_SZMJGCAvEfCVApDNkUx-4Q" name="AutomaticValidation" nextApprove="_SZMJGSAvEfCVApDNkUx-4Q" nextReject="_SZMJGiAvEfCVApDNkUx-4Q" method="AICheckForForbiddenWords"/>
+        <step xsi:type="cr2:Manual" xmi:id="_SZMJGSAvEfCVApDNkUx-4Q" name="ManualValidation" nextApprove="_SZMJGiAvEfCVApDNkUx-4Q" nextReject="_SZMJGiAvEfCVApDNkUx-4Q"/>
+        <step xsi:type="cr2:End" xmi:id="_SZMJGiAvEfCVApDNkUx-4Q" name="End"/>
+      </moderationProcess>
+    </userFeedback>
+    <userFeedback xsi:type="cr2:Review" xmi:id="_SZMJGyAvEfCVApDNkUx-4Q" name="Review" reviewType="ANNOTATED"/>
+  </subject>
+</cr2:Model>

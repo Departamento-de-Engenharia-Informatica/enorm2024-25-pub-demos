@@ -1,0 +1,15 @@
+ - ?nsuri: http://pam.enorm.mei.isep.ipp.pt/cr2
+ - ?render-egx: ../picto/cr2model2diagram.egx
+
+ - model:
+    - name: AmazonYAML
+    - subject: 
+        - name: Product
+        - feature:
+            - name: Price
+        - feature:
+            - name: Description
+        - userFeedbackReview: 
+            - name: Review
+            - reviewType: ONLYGRADE 
+        
