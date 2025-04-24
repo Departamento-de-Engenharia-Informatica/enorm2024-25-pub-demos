@@ -1,0 +1,15 @@
+package pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%];
+
+import pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%].domain.Comment;
+import pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%].domain.ValidationCommentProcess;
+import pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%].domain.ValidationCommentProcessImpl;
+
+public class SFactoryDefaultImpl implements SFactory {
+
+	@Override
+	public ValidationCommentProcess getValidationProcess(Comment c) {
+		// TODO Auto-generated method stub
+		return new ValidationCommentProcessImpl(c);
+	}
+
+}

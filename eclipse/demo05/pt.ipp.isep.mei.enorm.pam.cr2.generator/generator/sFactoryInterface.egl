@@ -1,0 +1,9 @@
+package pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%];
+
+import pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%].domain.Comment;
+import pt.ipp.isep.mei.enorm.pam.[%=theModel.name.firstToLowerCase()%].domain.ValidationCommentProcess;
+
+public interface SFactory {
+
+	ValidationCommentProcess getValidationProcess(Comment c);
+}
